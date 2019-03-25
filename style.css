@@ -1,0 +1,195 @@
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  border-radius: 5px;
+  background-color: rgb(255, 210, 255);
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgba(199, 195, 195, 0.644);
+}
+
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: rgb(202, 143, 202);
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: 0px;
+}
+
+.container {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+.container::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -16px;
+  background-color: rgb(255, 255, 255);
+  border: 4px solid black;
+  top: 0px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.left {
+  left: 0;
+}
+
+.right {
+  left: 50%;
+}
+
+.left::before {
+  content: ' ';
+  height: 0;
+  position: absolute;
+  top: 4px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid black;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent black;
+}
+
+.right::before {
+  content: ' ';
+  height: 0;
+  position: absolute;
+  top: 4px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid black;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent black transparent transparent;
+}
+
+.right::after {
+  left: -10px;
+}
+
+.content {
+  padding: 5px 15px;
+  background-color: black;
+  position: relative;
+  border-radius: 10px;
+  top: -15px;
+}
+
+@media screen and (max-width: 600px) {
+  .timeline::after {
+    left: 31px;
+  }
+
+  .container {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+
+  .container::before {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+
+  .left::after,
+  .right::after {
+    left: 15px;
+  }
+
+  .right {
+    left: 0%;
+  }
+  body,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: 'Lato', sans-serif;
+  }
+  body,
+  html {
+    height: 100%;
+    color: gray;
+    line-height: 1.8;
+  }
+
+  /* Create a Parallax Effect */
+  .bgimg-1,
+  .bgimg-2,
+  .bgimg-3 {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  /* Logo */
+  .bgimg-1 {
+    background-image: url('images/MelanieLogo.png');
+    min-height: 100%;
+  }
+  /* Masada */
+  .bgimg-2 {
+    background-image: url('images/background.jpg');
+    min-height: 100%;
+  }
+  /* Ocean */
+  .bgimg-3 {
+    background-image: url('images/ocean.jpg');
+    min-height: 400px;
+  }
+
+  /* Paddle */
+  .bgimg-4 {
+    background-image: url('images/paddle.jpg');
+    min-height: 400px;
+  }
+
+  .-wide {
+    letter-spacing: 10px;
+  }
+  .-hover-opacity {
+    cursor: pointer;
+  }
+
+  /* Turn off parallax scrolling for tablets and phones */
+  @media only screen and (max-device-width: 1600px) {
+    .bgimg-1,
+    .bgimg-2,
+    .bgimg-3 {
+      background-attachment: scroll;
+      min-height: 400px;
+    }
+  }
+  #home {
+    display: flex;
+    justify-content: center;
+  }
+  #small_div {
+    display: flex;
+  }
+}

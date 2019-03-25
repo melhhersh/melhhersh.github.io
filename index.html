@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>melaniehublardhershman.com</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="images/favicon-16x16.png"
+    />
+    <link rel="manifest" href="images/site.webmanifest" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.0/css/all.css"
+      integrity="sha384-Mmxa0mLqhmOeaE8vgOSbKacftZcsNYDjQzuCOm6D02luYSzBG8vpaOykv9lFQ51Y"
+      crossorigin="anonymous"
+    />
+    <script src="main.js"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+      body,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-family: 'Lato', sans-serif;
+      }
+      body,
+      html {
+        height: 100%;
+        color: black;
+        line-height: 1.8;
+      }
+
+      /* Create a Parallax Effect */
+      .bgimg-1,
+      .bgimg-2,
+      .bgimg-3 {
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      /* Logo */
+      .bgimg-Logo {
+        background-image: url('images/MelanieLogo.png');
+        min-height: 100%;
+      }
+      /* Masada */
+      .bgimg-2 {
+        background-image: url('images/background.jpg');
+        min-height: 400px;
+      }
+      /* Ocean */
+      .bgimg-3 {
+        background-image: url('images/ocean.jpg');
+        min-height: 400px;
+      }
+
+      /* Paddle */
+      .bgimg-1 {
+        background-image: url('images/paddle.jpg');
+        min-height: 100%;
+      }
+
+      .-wide {
+        letter-spacing: 10px;
+      }
+      .-hover-opacity {
+        cursor: pointer;
+      }
+
+      /* Turn off parallax scrolling for tablets and phones */
+      @media only screen and (max-device-width: 1600px) {
+        .bgimg-1,
+        .bgimg-2,
+        .bgimg-3 {
+          background-attachment: scroll;
+          min-height: 400px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top">
+      <div class="w3-bar" id="myNavbar">
+        <a
+          class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right"
+          href="javascript:void(0);"
+          onclick="toggleFunction()"
+          title="Toggle Navigation Menu"
+        >
+          <i class="fa fa-bars"></i>
+        </a>
+        <a href="#home" class="w3-bar-item w3-button">HOME</a>
+        <a href="#about" class="w3-bar-item w3-button w3-hide-small"
+          ><i class="fa fa-user"></i> ABOUT</a
+        >
+        <a href="#projects" class="w3-bar-item w3-button w3-hide-small"
+          ><i class="fa fa-code"></i> PROJECTS</a
+        >
+        <a href="#experience" class="w3-bar-item w3-button w3-hide-small"
+          ><i class="fa fa-th"></i> EXPERIENCE</a
+        >
+        <a href='resume.pdf' target="_blank" class="w3-bar-item w3-button w3-hide-small"
+          ><i class="fa fa-file"></i> RESUME</a
+        >
+        <a href="#contact" class="w3-bar-item w3-button w3-hide-small"
+          ><i class="fa fa-envelope"></i> CONTACT</a
+        >
+      </div>
+    </div>
+
+    <!-- First Parallax Image with Logo Text -->
+    <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+        <div class="w3-display-middle" style="white-space:nowrap;">
+            <img position=absolute src="images/MelanieLogo.png"/>
+        </div>
+      </div>
+
+    <!-- ABOUT ME -->
+    <div class="w3-content w3-container w3-padding-64" id="about">
+      <h3 class="w3-center">A little bit about myself...</h3>
+      <div class="w3-row">
+        <div class="w3-col m6 w3-center w3-padding-large">
+          <br />
+          <img
+            src="images/IMG_5650.jpg"
+            class="w3-round w3-image w3-opacity w3-hover-opacity-off"
+            alt="Photo of Me"
+            width="500"
+            height="333"
+          />
+        </div>
+
+        <!-- Hide this text on small devices -->
+        <div class="w3-col m6 w3-hide-small w3-padding-large">
+          <p>
+        I'm a full stack software engineer based in Brooklyn, with a focus in
+        JavaScript and the NERD stack (Node.js, Express, React/Redux, and
+        Databases (PostgreSQL)). I am a theater director turned software engineer.
+        I thoroughly enjoy trying out new baking recipes, meditating with my cat
+        (I'm both a cat and dog person(I just don't have a dog yet)), and biking
+        around the city. If you're in the area, please feel free to reach out to
+        grab a cup of tea sometime!
+      </p>
+          <p>
+            In a previous position, I managed the relationship with a third party
+            application software company that was understaffed and I offered to write
+            out our program applications in HTML and send it to them if it got them
+            published faster. When I successfully wrote out my first bit of code, I
+            found that I really enjoyed solving problems and learning programming.
+            This started my journey of learning code which lead me to online
+            resources, coding prep bootcamp, and then to FullStack Academy. I’ve now
+            learned the NERD stack and have created code I’m excited and proud of.
+          </p>
+        </div>
+      </div>
+    </div>
+    </div>
+
+    <!-- PROJECTS -->
+    <div class="bgimg-2 w3-display-container w3-opacity-min">
+        <div class="w3-display-middle">
+          <span class="w3-xxlarge w3-text-white w3-wide">PROJECTS</span>
+      </div>
+    </div>
+
+    <!-- PROJECTS -->
+    <div class="w3-content w3-container w3-padding-64" id="projects">
+      <p class="w3-center">
+        <div>
+      <h1 class="w3-center"><em>Recipeasy</em></h1>
+      <div class="w3-center">
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/XcTqUfGZ3Co"
+        frameBorder="0"
+        allow="accelerometer; autoplay; encrypted-media;
+        gyroscope; picture-in-picture"
+        allowFullScreen
+      >
+      </iframe>
+    </div>
+      <h4 class="w3-center">Receipt scanning recipe finder</h4>
+      <p>
+        Recipeasy is an app that allows users to conveniently take photos of
+        grocery receipts which will add ingredients to a virtual pantry. They
+        can then receive a list of recipes based on the selected ingredients in
+        their respective pantry. Our Capstone is a mobile app that we created
+        utilizing React Native on the front-end, FireStore for hosting our data
+        and FireFunctions to create a headless server. From this project we
+        learned how to utilize various external API's, how to create and deploy
+        functions on FireFunctions, how to store data in FireStore and how to
+        work in an agile team. Something interesting we learned was how to parse
+        text from images and overcoming one of our main blockers which was
+        parsing imperfect receipts.
+      </p>
+      <p class="w3-center">
+        Team Members: Dayoung Lee, Melanie Hublard Hershman, Calvin Ho, Kevin Ko
+      </p>
+    </div>
+    <div class="w3-row w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+        <div class="w3-quarter w3-section">
+          <span class="w3-large">Node</span>
+        </div>
+        <div class="w3-quarter w3-section">
+            <span class="w3-large">Express</span>
+          </div>
+          <div class="w3-quarter w3-section">
+              <span class="w3-large">React Native</span>
+            </div>
+            <div class="w3-quarter w3-section">
+                <span class="w3-large">Redux</span>
+              </div>
+              <div class="w3-quarter w3-section">
+                  <span class="w3-large">FireStore</span>
+                </div>
+                <div class="w3-quarter w3-section">
+                    <span class="w3-large">FireFunctions</span>
+                  </div>
+                  <div class="w3-quarter w3-section">
+                      <span class="w3-large">Google Cloud Vision API</span>
+                    </div>
+                    <div class="w3-quarter w3-section">
+                        <span class="w3-large">Rapid API</span>
+                      </div>
+      </div>
+
+    <!-- AVALON SECTION -->
+
+    <div>
+      <br>
+      <br>
+      <h1 class="w3-row w3-center"><em>Avalon Unboarded</em></h1>
+      <div class="w3-center">
+      <iframe
+        class="w3-center"
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/rrDD_uJBed4"
+        frameBorder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+        allowFullScreen
+      ></iframe>
+    </div>
+      <p>
+        React Native Avalon board game with an Express, Node, Postgres backend.
+        The goal was to design a game where multiple people could play Avalon if
+        they were all together but missing the physical board. My app allows for
+        multiple rooms, games from 5-10 players, and will persist should you
+        leave the app or the server go down.
+      </p>
+      <div id="small_div" class="w3-row w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+          <div class="w3-section w3-col" style="width:20%">
+            <span class="w3-large">Node</span>
+          </div>
+          <div class="w3-section w3-col" style="width:20%">
+              <span class="w3-large">Express</span>
+            </div>
+            <div class="w3-section w3-col" style="width:20%">
+                <span class="w3-large">PostgreSQL</span>
+              </div>
+              <div class="w3-section w3-col" style="width:20%">
+                  <span class="w3-large">React Native</span>
+                </div>
+                <div class="w3-section w3-col" style="width:20%">
+                    <span class="w3-large">Expo</span>
+                  </div>
+        </div>
+    </div>
+      </p>
+    </div>
+    <!-- EXPERIENCE -->
+    <div class="bgimg-3 w3-display-container w3-opacity-min">
+      <div class="w3-display-middle">
+        <span class="w3-xxlarge w3-text-white w3-wide">EXPERIENCE</span>
+      </div>
+    </div>
+
+    <!-- EXPERIENCE -->
+    <div class="w3-content w3-container w3-padding-64" id="experience">
+      <h1 class="w3-center"><em>Places I've worked and learned</em></h1>
+      <p class="w3-center">
+          <div class="timeline">
+              <div class="container left">
+                <div class="content">
+                  <div class="card">
+                    <h2 class="w3-center"><ins><strong>Fullstack Academy of Code</strong></ins></h2>
+                    <h3 class="w3-center"><em>Teaching Fellow</em></h3>
+                    <p class="w3-center">February 2019 - May 2019</p>
+                    <ul>
+                      <li>
+                        Offered competitive fellowship to mentor 54 immersive software
+                        engineering students
+                      </li>
+                      <li>
+                        Act as agile project manager and code reviewer for student
+                        projects
+                      </li>
+                      <li>
+                        Teach writing clean code, debugging, problem solving, and
+                        whiteboarding strategies
+                      </li>
+                      <li>
+                        Conduct technical admissions interviews for prospective students
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="container right">
+                <div class="content">
+                  <div class="card">
+                    <h2 class="w3-center"><strong><ins>Fullstack Academy of Code</ins></strong></h2>
+                    <h3 class="w3-center"><em>Degree: Software Engineering Immersive Bootcamp</em></h3>
+                    <p class="w3-center">October 2018 - February 2019</p>
+                  </div>
+                </div>
+              </div>
+              <div class="container left">
+                <div class="content">
+                  <div class="card">
+                    <h2 class="w3-center"><strong><ins>Carnegie Hall</ins></strong></h2>
+                    <h3 class="w3-center"><em>Education Administration Associate</em></h3>
+                    <p class="w3-center">January 2017 - March 2019</p>
+                    <ul>
+                      <li>
+                        Managed projects and relationships with the education program
+                        teams and IT/IS and Web Department
+                      </li>
+                      <li>
+                        Created and updated applications through third party site
+                        Acceptd as well as Carnegie Hall website
+                      </li>
+                      <li>
+                        Maintained data, events, and season set up for CRM database
+                        Tessitura
+                      </li>
+                      <li>
+                        Facilitated new trainings on SharePoint, Tessitura, and Acceptd
+                        for new education staff
+                      </li>
+                      <li>
+                        Extracted numbers for government reports using various Tessitura
+                        and Cube programs
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="container left">
+                <div class="content">
+                  <div class="card">
+                    <h2 class="w3-center"><strong><ins>National Yiddish Theatre Folksbiene</ins></strong></h2>
+                    <h3 class="w3-center"><em>Executive Associate</em></h3>
+                    <p class="w3-center">September 2015 - December 2016</p>
+                    <ul>
+                      <li>
+                        Developed and implemented a new ticketing system with OvationTix
+                        and Boca ticket printing
+                      </li>
+                      <li>
+                        Led technological trainings on DonorPerfect, OvationTix,
+                        Microsoft suites and other technologies to new employees
+                      </li>
+                      <li>
+                        Edited and proofread marketing material including, but not
+                        limited to, e-blasts, brochures, formal letters, and posters as
+                        well as coordinated mass email communications
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="container right">
+              <div class="content">
+                <div class="card">
+                  <h2 class="w3-center"><strong><ins>Ithaca College</ins></strong></h2>
+                  <h3 class="w3-center"><em>Degree: Bachelor of Arts in Theater Studies</em></h3>
+                  <p class="w3-center">September 2011 - May 2015</p>
+                  <p>Graduated Cum Laude</p>
+                  <p>Minors:</p>
+                  <ul>
+                    <li>Business Administration</li>
+                    <li>Dance</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </p>
+      </div>
+
+    <!-- Footer -->
+    <footer
+      id="contact" class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off"
+    >
+      <a href="#home" class="w3-button w3-light-grey"
+        ><i class="fa fa-arrow-up w3-margin-right"></i>To the top!</a
+      >
+      <div class="w3-xxxlarge w3-section">
+          <a class=" w3-hover-opacity" href="mailto:melanie@hershman.us?subject=What's up Melanie?">
+              <i class="fas fa-envelope-square"></i>
+            </a>
+            <a class=" w3-hover-opacity"
+              href="https://www.linkedin.com/in/melaniehublardhershman/"
+              target="_blank"
+            >
+              <i class="fa fa-linkedin"></i>
+            </a>
+            <a class=" w3-hover-opacity"
+            href="https://github.com/melhhersh" target="_blank">
+              <i class="fab fa-github-square"></i>
+            </a>
+            <div class="w3-medium">
+            ©Built with the mind power of Melanie
+          </div>
+      </div>
+    </footer>
+
+    <script>
+      function onClick(element) {
+        document.getElementById('img01').src = element.src;
+        document.getElementById('modal01').style.display = 'block';
+        var captionText = document.getElementById('caption');
+        captionText.innerHTML = element.alt;
+      }
+
+      window.onscroll = function() {
+        myFunction();
+      };
+      function myFunction() {
+        var navbar = document.getElementById('myNavbar');
+        if (
+          document.body.scrollTop > 100 ||
+          document.documentElement.scrollTop > 100
+        ) {
+          navbar.className =
+            'w3-bar' + ' w3-card' + ' w3-animate-top' + ' w3-white';
+        } else {
+          navbar.className = navbar.className.replace(
+            ' w3-card w3-animate-top w3-white',
+            ''
+          );
+        }
+      }
+      function toggleFunction() {
+        var x = document.getElementById('navDemo');
+        if (x.className.indexOf('w3-show') == -1) {
+          x.className += ' w3-show';
+        } else {
+          x.className = x.className.replace(' w3-show', '');
+        }
+      }
+    </script>
+  </body>
+</html>
