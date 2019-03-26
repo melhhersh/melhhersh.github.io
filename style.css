@@ -3,6 +3,7 @@
   transition: 0.3s;
   border-radius: 5px;
   background-color: rgb(255, 210, 255);
+  color: gray;
 }
 * {
   box-sizing: border-box;
@@ -121,75 +122,64 @@ body {
   .right {
     left: 0%;
   }
-  body,
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    font-family: 'Lato', sans-serif;
-  }
-  body,
-  html {
-    height: 100%;
-    color: gray;
-    line-height: 1.8;
-  }
+}
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Lato', sans-serif;
+}
+body,
+html {
+  height: 100%;
+  line-height: 1.8;
+}
 
-  /* Create a Parallax Effect */
+/* Logo */
+.logo {
+  background-image: url('images/MelanieLogo.png');
+}
+.bgimg-1 {
+  background-image: url('images/paddle.jpg');
+  min-height: 100%;
+}
+/* Masada */
+.bgimg-2 {
+  background-image: url('images/background.jpg');
+  min-height: 400px;
+}
+/* Ocean */
+.bgimg-3 {
+  background-image: url('images/ocean.jpg');
+  min-height: 400px;
+}
+
+.-wide {
+  letter-spacing: 10px;
+}
+.-hover-opacity {
+  cursor: pointer;
+}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1600px) {
+  .logo {
+    min-height: 100px;
+  }
   .bgimg-1,
   .bgimg-2,
   .bgimg-3 {
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-
-  /* Logo */
-  .bgimg-1 {
-    background-image: url('images/MelanieLogo.png');
-    min-height: 100%;
-  }
-  /* Masada */
-  .bgimg-2 {
-    background-image: url('images/background.jpg');
-    min-height: 100%;
-  }
-  /* Ocean */
-  .bgimg-3 {
-    background-image: url('images/ocean.jpg');
+    background-attachment: initial;
     min-height: 400px;
   }
-
-  /* Paddle */
-  .bgimg-4 {
-    background-image: url('images/paddle.jpg');
-    min-height: 400px;
-  }
-
-  .-wide {
-    letter-spacing: 10px;
-  }
-  .-hover-opacity {
-    cursor: pointer;
-  }
-
-  /* Turn off parallax scrolling for tablets and phones */
-  @media only screen and (max-device-width: 1600px) {
-    .bgimg-1,
-    .bgimg-2,
-    .bgimg-3 {
-      background-attachment: scroll;
-      min-height: 400px;
-    }
-  }
-  #home {
-    display: flex;
-    justify-content: center;
-  }
-  #small_div {
-    display: flex;
-  }
+}
+#home {
+  display: flex;
+  justify-content: center;
+}
+#small_div {
+  display: flex;
 }
