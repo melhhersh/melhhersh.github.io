@@ -1,7 +1,11 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>MelanieHublardHershman.com</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -27,12 +31,6 @@
       integrity="sha384-Mmxa0mLqhmOeaE8vgOSbKacftZcsNYDjQzuCOm6D02luYSzBG8vpaOykv9lFQ51Y"
       crossorigin="anonymous"
     />
-    <script src="main.js"></script>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
       body,
       h1,
@@ -132,6 +130,16 @@
       </div>
     </div>
 
+    <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+    <a href="#projects" class="w3-bar-item w3-button" onclick="toggleFunction()">PROJECTS</a>
+    <a href="#experience" class="w3-bar-item w3-button" onclick="toggleFunction()">EXPERIENCE</a>
+    <a href='resume.pdf' target="_blank" class="w3-bar-item w3-button" onclick="toggleFunction()">RESUME</a>
+    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+  </div>
+</div>
+
     <!-- First Parallax Image with Logo Text -->
     <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
         <div class="w3-display-middle" style="white-space:nowrap;">
@@ -198,11 +206,9 @@
         height="315"
         src="https://www.youtube.com/embed/XcTqUfGZ3Co"
         frameBorder="0"
-        allow="accelerometer; autoplay; encrypted-media;
-        gyroscope; picture-in-picture"
         allowFullScreen
-      >
-      </iframe>
+        allow="accelerometer; autoplay; encrypted-media;
+        gyroscope; picture-in-picture"></iframe>
     </div>
       <h4 class="w3-center">Receipt scanning recipe finder</h4>
       <p>
