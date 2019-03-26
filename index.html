@@ -89,7 +89,7 @@
           <br />
           <img
             src="images/IMG_5650.jpg"
-            class="w3-round w3-image w3-opacity w3-hover-opacity-off"
+            class="w3-round w3-image"
             alt="Photo of Me"
             width="500"
             height="333"
@@ -247,11 +247,12 @@
           <div class="timeline">
               <div class="container left">
                 <div class="content">
-                  <div class="card">
-                    <h2 class="w3-center"><ins><strong>Fullstack Academy of Code</strong></ins></h2>
+                    <div class="card w3-center">
+                    <button class="card"><h2><ins><strong>Fullstack Academy of Code</strong></ins></h2></button>
+                    <div class="innerCard">
                     <h3 class="w3-center"><em>Teaching Fellow</em></h3>
                     <p class="w3-center">February 2019 - May 2019</p>
-                    <ul>
+                    <ul style="text-align:left">
                       <li>
                         Offered competitive fellowship to mentor 54 immersive software
                         engineering students
@@ -269,24 +270,28 @@
                       </li>
                     </ul>
                   </div>
+                  </div>
                 </div>
               </div>
               <div class="container right">
                 <div class="content">
-                  <div class="card">
-                    <h2 class="w3-center"><strong><ins>Fullstack Academy of Code</ins></strong></h2>
+                    <div class="card w3-center">
+                    <button class="card"><h2><strong><ins>Fullstack Academy of Code</ins></strong></h2></button>
+                    <div class="innerCard">
                     <h3 class="w3-center"><em>Degree: Software Engineering Immersive Bootcamp</em></h3>
                     <p class="w3-center">October 2018 - February 2019</p>
+                  </div>
                   </div>
                 </div>
               </div>
               <div class="container left">
                 <div class="content">
-                  <div class="card">
-                    <h2 class="w3-center"><strong><ins>Carnegie Hall</ins></strong></h2>
+                  <div class="card w3-center">
+                    <button class="card"><h2><strong><ins>Carnegie Hall</ins></strong></h2></button>
+                    <div class="innerCard">
                     <h3 class="w3-center"><em>Education Administration Associate</em></h3>
                     <p class="w3-center">January 2017 - March 2019</p>
-                    <ul>
+                    <ul style="text-align:left">
                       <li>
                         Managed projects and relationships with the education program
                         teams and IT/IS and Web Department
@@ -309,15 +314,17 @@
                       </li>
                     </ul>
                   </div>
+                  </div>
                 </div>
               </div>
               <div class="container left">
                 <div class="content">
                   <div class="card">
-                    <h2 class="w3-center"><strong><ins>National Yiddish Theatre Folksbiene</ins></strong></h2>
+                    <button class="card"><h2 class="w3-center"><strong><ins>National Yiddish Theatre Folksbiene</ins></strong></h2></button>
+                    <div class="innerCard">
                     <h3 class="w3-center"><em>Executive Associate</em></h3>
                     <p class="w3-center">September 2015 - December 2016</p>
-                    <ul>
+                    <ul style="text-align:left">
                       <li>
                         Developed and implemented a new ticketing system with OvationTix
                         and Boca ticket printing
@@ -333,21 +340,24 @@
                       </li>
                     </ul>
                   </div>
+                  </div>
                 </div>
               </div>
             </div>
             <div class="container right">
               <div class="content">
-                <div class="card">
-                  <h2 class="w3-center"><strong><ins>Ithaca College</ins></strong></h2>
+                <div class="card w3-center">
+                  <button class="card"><h2><strong><ins>Ithaca College</ins></strong></h2></button>
+                  <div class="innerCard">
                   <h3 class="w3-center"><em>Degree: Bachelor of Arts in Theater Studies</em></h3>
                   <p class="w3-center">September 2011 - May 2015</p>
                   <p>Graduated Cum Laude</p>
                   <p>Minors:</p>
-                  <ul>
+                  <ul style="text-align:left">
                     <li>Business Administration</li>
                     <li>Dance</li>
                   </ul>
+                </div>
                 </div>
               </div>
             </div>
@@ -414,6 +424,20 @@
         } else {
           x.className = x.className.replace(' w3-show', '');
         }
+      }
+      var coll = document.getElementsByClassName("card");
+      var i;
+
+      for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+          if (content.style.display === "block") {
+            content.style.display = "none";
+          } else {
+            content.style.display = "block";
+          }
+        });
       }
     </script>
   </body>

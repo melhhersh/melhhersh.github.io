@@ -1,9 +1,14 @@
 .card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  transition: 0.3s;
-  border-radius: 5px;
-  background-color: rgb(255, 210, 255);
-  color: gray;
+  background-color: gray;
+  color: whitesmoke;
+  border: none;
+}
+
+.innerCard {
+  display: none;
+  overflow: hidden;
+  background-color: whitesmoke;
+  color: black;
 }
 * {
   box-sizing: border-box;
@@ -19,11 +24,12 @@ body {
   margin: 0 auto;
 }
 
+/* timeline */
 .timeline::after {
   content: '';
   position: absolute;
   width: 6px;
-  background-color: rgb(202, 143, 202);
+  background-color: rgb(235, 171, 235);
   top: 0;
   bottom: 0;
   left: 50%;
@@ -37,6 +43,7 @@ body {
   width: 50%;
 }
 
+/* Dots on timeline */
 .container::after {
   content: '';
   position: absolute;
@@ -88,11 +95,12 @@ body {
   left: -10px;
 }
 
+/* box around */
 .content {
-  padding: 5px 15px;
+  padding: 5px 5px 5px 5px;
   background-color: black;
   position: relative;
-  border-radius: 10px;
+  border-radius: 5px;
   top: -15px;
 }
 
