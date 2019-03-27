@@ -158,6 +158,12 @@ html {
     height: 300px;
     width: 600px;
   }
+  .bgimg-1,
+  .bgimg-2,
+  .bgimg-3 {
+    min-height: 250px;
+    background-attachment: initial;
+  }
 }
 
 @media only screen and (max-width: 750px) {
@@ -200,5 +206,6 @@ html {
   .bgimg-2,
   .bgimg-3 {
     min-height: 250px;
+    background-attachment: local;
   }
 }
