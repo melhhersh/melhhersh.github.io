@@ -125,17 +125,17 @@ html {
   background-image: url('images/MelanieLogo.png');
 }
 .bgimg-1 {
-  background-image: url('images/paddle.jpg');
+  background-image: url('images/paddle.png');
   min-height: 100%;
 }
 /* Masada */
 .bgimg-2 {
-  background-image: url('images/background.jpg');
+  background-image: url('images/background.png');
   min-height: 400px;
 }
 /* Ocean */
 .bgimg-3 {
-  background-image: url('images/ocean.jpg');
+  background-image: url('images/ocean.png');
   min-height: 400px;
 }
 
@@ -161,7 +161,7 @@ html {
   .bgimg-1,
   .bgimg-2,
   .bgimg-3 {
-    background-attachment: scroll;
+    background-attachment: fixed;
     min-height: 250px;
   }
 }
