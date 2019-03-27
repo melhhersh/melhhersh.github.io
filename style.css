@@ -153,7 +153,7 @@ html {
   display: flex;
 }
 
-@media only screen and (max-width: 1100px) {
+@media only screen and (max-width: 1100px) and (-webkit-min-device-pixel-ratio: 2) {
   #logo {
     height: 300px;
     width: 600px;
@@ -180,7 +180,7 @@ html {
   }
 }
 
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 750px) and (-webkit-min-device-pixel-ratio: 2) {
   .timeline::after {
     left: 30px;
   }
