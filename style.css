@@ -164,6 +164,20 @@ html {
     background-attachment: fixed;
     min-height: 250px;
   }
+  .bgimg-1 {
+    background-image: url('images/paddle-small.png');
+    height: 100%;
+  }
+  /* Masada */
+  .bgimg-2 {
+    background-image: url('images/background-small.png');
+    height: 400px;
+  }
+  /* Ocean */
+  .bgimg-3 {
+    background-image: url('images/ocean-small.png');
+    height: 400px;
+  }
 }
 
 @media only screen and (max-width: 750px) {
