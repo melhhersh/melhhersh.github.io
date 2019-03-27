@@ -125,15 +125,18 @@ html {
   background-image: url('images/MelanieLogo.png');
 }
 .bgimg-1 {
-  background-image: url('images/paddle.png') / auto 100%;
+  background-image: url('images/paddle.png');
+  height: 100%;
 }
 /* Masada */
 .bgimg-2 {
-  background-image: url('images/background.png') / auto 400px;
+  background-image: url('images/background.png');
+  height: 400px;
 }
 /* Ocean */
 .bgimg-3 {
-  background-image: url('images/ocean.png') / auto 400px;
+  background-image: url('images/ocean.png');
+  height: 400px;
 }
 
 .-wide {
