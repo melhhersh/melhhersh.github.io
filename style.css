@@ -153,7 +153,7 @@ html {
   display: flex;
 }
 
-@media only screen and (max-width: 1100px) and (-webkit-min-device-pixel-ratio: 2) {
+@media only screen and (max-width: 1100px) {
   #logo {
     height: 300px;
     width: 600px;
@@ -161,7 +161,11 @@ html {
   .bgimg-1,
   .bgimg-2,
   .bgimg-3 {
-    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-attachment: initial;
     min-height: 250px;
   }
   .bgimg-1 {
@@ -180,7 +184,7 @@ html {
   }
 }
 
-@media only screen and (max-width: 750px) and (-webkit-min-device-pixel-ratio: 2) {
+@media only screen and (max-width: 750px) {
   .timeline::after {
     left: 30px;
   }
