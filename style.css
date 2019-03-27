@@ -196,3 +196,9 @@ html {
     background-color: rgb(166, 255, 255);
   }
 }
+@media only screen and (max-width: 1400px) {
+  #logo {
+    height: 300px;
+    width: 600px;
+  }
+}
