@@ -158,30 +158,6 @@ html {
     height: 300px;
     width: 600px;
   }
-  .bgimg-1,
-  .bgimg-2,
-  .bgimg-3 {
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    background-attachment: initial;
-    min-height: 250px;
-  }
-  .bgimg-1 {
-    background-image: url('images/paddle-small.png');
-    height: 100%;
-  }
-  /* Masada */
-  .bgimg-2 {
-    background-image: url('images/background-small.png');
-    height: 400px;
-  }
-  /* Ocean */
-  .bgimg-3 {
-    background-image: url('images/ocean-small.png');
-    height: 400px;
-  }
 }
 
 @media only screen and (max-width: 750px) {
@@ -219,5 +195,11 @@ html {
   }
   .cardRight {
     background-color: rgb(166, 255, 255);
+  }
+  .bgimg-1,
+  .bgimg-2,
+  .bgimg-3 {
+    background-attachment: scroll;
+    min-height: 250px;
   }
 }
